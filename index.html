@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Invitación Especial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fuente elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Librería -->
+  <script src="https://unpkg.com/page-flip/dist/js/page-flip.browser.js"></script>
+</head>
+  <!-- 🔥 INTRO VIDEO -->
+
+<body>
+  <div id="intro">
+    <video id="introVideo" autoplay playsinline>
+      <source src="intro.mp4" type="video/mp4">
+    </video>
+  </div>
+<div class="scene">
+  <div id="book">
+    <audio id="musicaFondo" loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+    <div class="page portada">
+    </div>
+
+  <div class="page">
+   
+      <!-- 🎺 Trompetistas -->
+       <audio id="audioTrompeta" src="trompetas.mp3" preload="auto"></audio>
+  <img src="trompeta izquierda.jpg" class="trompeta izquierda">
+  <img src="trompeta derecha.jpeg" class="trompeta derecha">
+
+  <div class="pergamino-wrapper">
+
+    <div class="rollo arriba"></div>
+    <div class="rollo abajo"></div>
+<button onclick="abrirPergamino()" class="abrir-btn" id="boton">
+      </button>
+    <div class="pergamino" id="pergamino">
+
+      
+
+      <div class="contenido">
+        <h2>POR DECRETO DE SUS MAJESTADES</h2>
+        
+        <p>
+Hace doce lunas, el repique de las campanas anunció la llegada de la bendición más esperada: la Princesa Amanda. Hoy, su luz brilla con más fuerza que nunca, colmando de gloria cada rincón de este palacio y uniendo a todo el reino en una sola celebración.
+
+En virtud de tan maravilloso acontecimiento, el Rey y la Reina tienen el honor de convocar a los príncipes y princesas más distinguidos del reino al Gran Baile de la Corte, para celebrar con los más altos honores el cumpleaños de nuestra amada princesa</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- pagina de auyama y hada madrina -->
+    
+<div class="page">
+
+<div id="escena">
+
+  <img src="fondo.jpeg" id="fondo">
+
+  <img src="hada.png" id="hada">
+  <img src="calabaza.png" id="calabaza">
+  <img src="carroza.jpeg" id="carroza">
+
+  <div id="destello"></div>
+
+  <div id="espejo">
+    <img src="espejo.jpeg">
+    </div>
+  </div>
+
+</div>
+
+</div>
+<!-- pagina de alfombra magica -->
+    <div class="page" id="pagina-aladdin">
+
+  <!-- Fondo -->
+  <img src="fondo estrellas.png" id="fondo2">
+<div id="capa-interactiva">
+  <!-- Alfombra con Aladdin y Jazmín -->
+   <div id="alfombra-container">
+  <img src="alfombra.png" id="alfombra">
+  <div id="brillo"></div>
+  </div>
+  <!-- Cuadro de texto -->
+  <div id="popup">
+    <p>Deja tus mejores deseos para la Princesa Amanda</p>
+    <input type="text" id="mensaje" placeholder="Escribe tu mensaje..." />
+    <button id="enviar">Enviar</button>
+ </div>
+  </div>
+
+</div>
+    </div>
+    <!-- pagina de sirenita -->
+<div class="page" id="pagina-sirenita">
+
+  <!-- Fondo -->
+  <img src="fondo sirenita.jpeg" id="fondo-sirenita">
+
+  <!-- Sirenita -->
+  <img src="sirenita.png" id="sirenita">
+
+  <img src="flecha.png" id="flecha">
+  <!-- Cofre -->
+  <div id="cofre-container">
+    <img src="cofre.png" id="cofre">
+    <div id="brillo"></div>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay3"></div>
+
+  <!-- Popup -->
+  <div id="popup-tiempo">
+    <p id="texto-tiempo">Faltan 0 días</p>
+  </div>
+
+</div>
+
+<!-- pagina final -->
+    <div class="page" id="pagina-final">
+
+  <!-- Fondo -->
+  <img src="fondo princesas.jpeg" id="fondo-final">
+
+  <!-- Contenido -->
+  <div id="contenido-final">
+    <button id="btn-confirmar">Confirmar</button>
+    <p>Confirma tu asistencia</p>
+  </div>
+
+  <!-- Popup -->
+  <div id="overlay2"></div>
+
+  <div id="popup-confirmacion">
+    <p>¿Asistirás?</p>
+    <div class="opciones">
+      <button id="si">Sí</button>
+      <button id="no">No</button>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+</div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
